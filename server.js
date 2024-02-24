@@ -17,9 +17,24 @@ app.get('/', (req, res) => {
     res.sendFile(html_path + 'index.html');
 });
 
-app.get("/about", (req, res)=> {
+app.get('/about', (req, res) => {
+    res.sendFile(html_path + 'about.html');
+});
+
+app.get('/store', (req, res) => {
+    res.sendFile(html_path + 'store.html');
+});
+
+app.get('/blog', (req, res) => {
+    res.sendFile(html_path + 'blog.html');
+});
+
+app.post("/about", (req, res)=> {
+    console.log(req.body)
+    console.log("Inside fetch")
     res.sendFile(html_path + 'about.html');
 })
+
 
 app.post('/send', upload.single('uploadImage'), (req, res) => {
     res.sendFile(html_path + 'success.html');
