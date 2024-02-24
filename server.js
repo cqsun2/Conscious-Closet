@@ -17,6 +17,10 @@ app.get('/', (req, res) => {
     res.sendFile(html_path + 'index.html');
 });
 
+app.get("/about", (req, res)=> {
+    res.sendFile(html_path + 'about.html');
+})
+
 app.post('/send', upload.single('uploadImage'), (req, res) => {
     res.sendFile(html_path + 'success.html');
   })
