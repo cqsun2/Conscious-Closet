@@ -3,6 +3,7 @@ body {
   margin: 0px;
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
 }
 
 header{
@@ -11,18 +12,14 @@ header{
   background-color: #B4C4AE;
   display: flex;
   flex-direction: column; 
-  top: 0;
-  overflow: hidden;
   transition: .5s ease-in;
-  justify-content: center;
   align-items: center;
-  position: sticky;
 } 
 
 h1 {
   font-size: 42px;
   color: #fff;
-  line-height: 100px;
+  line-height: 300px;
   text-transform: uppercase;
   font-weight: 100;
   transition: .3s ease-in;
@@ -32,13 +29,16 @@ h1 {
 
   
 nav{
-  bottom: 0;
   width: 100%;
   background-color: rgba(0,0,0,.1);
   justify-content: space-evenly;
   display: flex;
-  padding: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  position: sticky;
+  top: 10px;
 }
+
        
 a{
   color: #fff;
@@ -54,4 +54,26 @@ a:hover {
   box-shadow: 0 0 0 1px #fff;
   background-color: rgba(0,0,0,.3);
 
+}
+
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Poppins"
+}
+
+main {
+  background-color: white;
+  height: 100%;
+  padding-bottom: 2.9rem;
+}
+
+footer {
+  background-color: #B4C4AE;
+  width: 100%;
+
+}
+
+p {
+  padding: 1rem;
 }
