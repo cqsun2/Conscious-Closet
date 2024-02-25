@@ -7,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/index.css">
-    <script defer src="/js/index.js"></script>
+    <script defer src="/js/store.js" type="module"></script>
 </head>
 <body>
     <div class = "header">
@@ -21,30 +22,17 @@
     </div>
     <main>
        
+        <div id="form">
+            <input type="text" id="search" placeholder="What are you looking for today?">
+            <button id="submit"><i class="fa fa-search"></i></button>
+        </div>
 
-       <form>
-        <input class = "query" placeholder="What are you looking for today?">
-        <button class = "submit"><a class = "uh" href = "store.html" style = "text-decoration: none;">Go</a></button>
-       </form>
 
-       <div class = "parsed-data">
-        
-       </div>
+        <div class="inner-window">
+            <ul id="myList"></ul>
+        </div>
+
     </main>
     
-
-    <script>
-        window.onscroll = function() {myFunction()};
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }  
-    </script>
 </body>
 </html>

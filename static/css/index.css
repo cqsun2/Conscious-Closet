@@ -4,6 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
+  overflow-x: none;
 }
 
 .header{
@@ -68,12 +69,15 @@ main {
   background-color: white;
   height: 100%;
   padding-bottom: 2.9rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 footer {
   background-color: #B4C4AE;
   width: 100%;
-
+  text-align: center;
 }
 
 p {
@@ -108,12 +112,12 @@ p {
   padding-top: 60px;
 }
 
-.query {
-  width:760px;
-  height:54px;
+#search {
   border-radius: 30px;
   font-size: 15px;
-  padding-left:7px;
+  padding: 1rem;
+  width: 300px;
+
 }
 
 ::placeholder {
@@ -121,23 +125,68 @@ p {
   font-size: 17px;
 }
 
-form {  
-  padding-right:10px;
-  padding-left: 230px;
-  padding-top: 30px;
+#form {  
+ display: flex;
+ justify-content: center;
+ width: 100%;
+ padding-top: 2rem;
+ padding-bottom: 2rem;
 }
 
-.submit {
-  height:54px;
-  width:54px;
-  border-radius:30px;
-  padding:2px;
-  background-color: rgb(197, 196, 196);
-  text-decoration: none;
+#submit {
+  border-width: 0;
+  background-color: transparent;
+
 }
+
 
 .uh:hover {
   background-color:  rgb(197, 196, 196);
   text-decoration: none;
+}
+
+
+li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 200px;
+  max-height: 300px;
+}
+
+#myList {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#0 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#3 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.list-p {
+  font-size: 15px;
+  margin: 0rem;
 }
 
