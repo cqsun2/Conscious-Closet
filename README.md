@@ -4,6 +4,14 @@ Conscious Closet is a consumer-focused shopping tool designed to steer you clear
 
 At Conscious Closet, our mission is to challenge the status quo of the fashion industry by advocating for sustainable and ethical practices. We believe in promoting conscious consumption, empowering individuals to make informed choices that prioritize environmental responsibility, social justice, and the well-being of future generations. 
 
+### To Start
+1. Clone Project
+2. In root level of project in terminal, run npm install
+3. run npm install express
+4. run npm install nodemon
+5. run npm start
+6. Project should be avaliable at http://localhost/
+
 
 ### Technologies Used
 #### Frontend: 
