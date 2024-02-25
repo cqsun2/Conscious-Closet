@@ -8,11 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="/css/index.css">
-    <script defer src="/js/index.js"></script>
+    <script defer src="/js/blog.js"></script>
 </head>
 <body>
     <div class = "header">
-        <h1>Conscious closet</h1>
+        <div class="logoContainer">
+            <img id="logo" src="/images/ConsciousClosetSmallLogo.png" alt="logo"/><h1>Conscious closet</h1>
+        </div>
         <nav id = "navbar">
             <a id="home" href="http://localhost/">Home</a>
             <a id="store" href="http://localhost/store">Shop</a>
@@ -22,30 +24,72 @@
     <main>
        
         <div class="card-inventory">
-            <img class="card-inventory-image" src="https://www.google.com/search?q=garden&sca_esv=63f71b581b7e33af&sca_upv=1&rlz=1C1RXQR_enUS1051US1051&sxsrf=ACQVn099hd_L03w51sPA_onBFlL1Y6SdIg:1708840741159&tbm=isch&source=iu&ictx=1&vet=1&fir=noPXZGjioPqA_M%252Cnt4EaXwkA23k_M%252C%252Fm%252F0bl0l%253B7Bc-agMfZcm1qM%252CxGcG4oyPd1c4XM%252C_%253BA1B47CEdV3sM2M%252CYZaddGlZdqjiEM%252C_%253BmpPxQsYl7FNApM%252C6tsGaltZZKbSTM%252C_%253B6PJ-qUdFq3Z7aM%252C2xQb8loI_KdnSM%252C_%253B3ZnPpdvxgNBIHM%252Ch_U6IvHnz5mCqM%252C_&usg=AI4_-kRjGZSMZEk5wSW9fKU1CScA8jakSg&sa=X&ved=2ahUKEwiKzurq58WEAxW_MVkFHSegCnAQ_B16BAgqEAE#imgrc=noPXZGjioPqA_M" alt="Avatar">
-            <div class="container">
-              <h4><b>Fast fashion consumerism</b></h4> 
-              <p>Author: </p> 
-              <p>Date: 02/20/2024</p> 
+            <div class="container" id="card1">
+                <img class="card-inventory-image" src="/images/blog/flowers.jpg" alt="Avatar"/>
+                <h4>Fast Fashion Consumerism</h4> 
+                <p class="author">Author: </p> 
+                <p class="date"></p> 
+            </div>
+            <div class="container" id="card2">
+                <img class="card-inventory-image" src="/images/blog/flowers.jpg" alt="Avatar"/>
+                <h4>Fast Fashion Consumerism</h4> 
+                <p class="author">Author: </p> 
+                <p class="date"></p> 
+            </div>
+            <div class="container" id="card3">
+                <img class="card-inventory-image" src="/images/blog/flowers.jpg" alt="Avatar"/>
+                <h4>Fast Fashion Consumerism</h4> 
+                <p class="author">Author: </p> 
+                <p class="date"></p> 
+            </div>
+            <div class="container" id="card4">
+                <img class="card-inventory-image" src="/images/blog/flowers.jpg" alt="Avatar"/>
+                <h4>Fast Fashion Consumerism</h4> 
+                <p class="author">Author: </p> 
+                <p class="date"></p> 
+            </div>
+            <div class="container" id="card5">
+                <img class="card-inventory-image" src="/images/blog/flowers.jpg" alt="Avatar"/>
+                <h4>Fast Fashion Consumerism</h4> 
+                <p class="author">Author: </p> 
+                <p class="date"></p> 
+            </div>
+            <div class="container" id="card6">
+                <img class="card-inventory-image" src="/images/blog/flowers.jpg" alt="Avatar"/>
+                <h4>Fast Fashion Consumerism</h4> 
+                <p class="author">Author: </p> 
+                <p class="date"></p> 
+            </div>
+            <div class="container" id="card6">
+                <img class="card-inventory-image" src="/images/blog/flowers.jpg" alt="Avatar"/>
+                <h4>Fast Fashion Consumerism</h4> 
+                <p class="author">Author: </p> 
+                <p class="date"></p> 
+            </div>
+            <div class="container" id="card7">
+                <img class="card-inventory-image" src="/images/blog/flowers.jpg" alt="Avatar"/>
+                <h4>Fast Fashion Consumerism</h4> 
+                <p class="author">Author: </p> 
+                <p class="date"></p> 
+            </div>
+            <div class="container" id="card8">
+                <img class="card-inventory-image" src="/images/blog/flowers.jpg" alt="Avatar"/>
+                <h4>Fast Fashion Consumerism</h4> 
+                <p class="author">Author: </p> 
+                <p class="date"></p> 
+            </div>
+            <div class="container" id="card9">
+                <img class="card-inventory-image" src="/images/blog/flowers.jpg" alt="Avatar"/>
+                <h4>Fast Fashion Consumerism</h4> 
+                <p class="author">Author: </p> 
+                <p class="date"></p> 
             </div>
           </div>
         </div>
        
     </main>
-    
-
-    <script>
-        window.onscroll = function() {myFunction()};
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }  
-    </script>
+    <footer>
+        <p>Conscious Closet &copy; 2024</p>
+    </footer>
 </body>
 </html>

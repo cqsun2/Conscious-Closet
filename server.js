@@ -27,10 +27,3 @@ app.get('/blog', (req, res) => {
 });
 
 
-
-
-/*
-app.post('/search', upload.none, (req, res) => {
-    res.sendFile(html_path + 'success.html');
-})
-*/
